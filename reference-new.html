@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Volumes ONTAP 9.11.1에는 새로운 개선 사항이 포함되어 있습니다.">
-  <meta name="keywords" content=" what"s new, new, features, release notes, enhancements"><!-- Icons -->
+  <meta name="keywords" content=" new features, release notes, enhancements"><!-- Icons -->
   <link rel="icon" href="/ko-kr/cloud-volumes-ontap-9111-relnotes/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ko-kr/cloud-volumes-ontap-9111-relnotes/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -178,7 +178,7 @@
     <li>
       
       <a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/reference-new.html" target="_self">
-        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.0</span></span>
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.1</span></span>
       </a>
                      
     </li>
@@ -592,7 +592,7 @@
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
 </script><div class="prod-nav" id="product-nav">
-  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/ko-kr/cloud-manager-family/"><img src="/ko-kr/cloud-volumes-ontap-9111-relnotes/images/left_arrow.png" alt=""><pre>모든 Cloud Manager 설명서</pre></a>
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/ko-kr/cloud-manager-family/"><img src="/ko-kr/cloud-volumes-ontap-9111-relnotes/images/left_arrow.png" alt=""><pre>모든 BlueXP 설명서</pre></a>
 </div><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li 
       data-pdf-exists="true" 
@@ -768,7 +768,7 @@
 
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/ko-kr/cloud-manager-family/">Cloud Manager</a>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-family/">BlueXP</a>
         </li>
         
 
@@ -804,7 +804,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-09-16 20:35:34 +0000">09/16/2022</time>
+    <time datetime="2022-12-09 16:28:31 +0000">12/09/2022</time>
     
   
 
@@ -820,7 +820,18 @@
 <p>Cloud Volumes ONTAP 9.11.1에는 새로운 개선 사항이 포함되어 있습니다.</p>
 </div>
 <div class="paragraph">
-<p>최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html" target="_blank" rel="noopener">"Cloud Manager 릴리즈 노트"</a> 를 참조하십시오.</p>
+<p>최신 버전의 BlueXP에는 추가 기능 및 향상된 기능이 도입되었습니다. 를 참조하십시오 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html" target="_blank" rel="noopener">"BlueXP 릴리스 정보"</a> 를 참조하십시오.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="9-11-1-p32022년-10월-19일">9.11.1 P3(2022년 10월 19일)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>버전 3.9.22 이상을 실행하는 커넥터가 있는 경우 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.11.1 P3 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.11.1P3" target="_blank" rel="noopener">"P3 패치에서 해결된 버그 목록을 봅니다"</a> (NetApp Support 사이트 로그인 필요).</p>
 </div>
 </div>
 </div>
@@ -911,7 +922,7 @@
 <p>이 릴리즈부터 AWS 또는 Azure의 Cloud Volumes ONTAP HA 쌍에서 새 스토리지 VM을 생성하는 경우, 스토리지 VM에 대한 네트워크 서비스 정책을 수정해야 합니다. Cloud Volumes ONTAP가 아웃바운드 관리 연결에 iSCSI LIF를 사용할 수 있도록 하기 때문에 서비스를 수정해야 합니다.</p>
 </div>
 <div class="paragraph">
-<p>Cloud Manager API를 사용하면 생성 중에 LIF 서비스가 설정되므로 Google Cloud의 Cloud Volumes ONTAP에서는 LIF 서비스를 수정할 필요가 없습니다.</p>
+<p>BluXP API는 생성 중에 LIF 서비스를 설정하므로 Google Cloud의 Cloud Volumes ONTAP에서는 LIF 서비스를 수정할 필요가 없습니다.</p>
 </div>
 <div class="paragraph">
 <p>실행해야 하는 명령은 다음 페이지에서 지정합니다.</p>
@@ -946,22 +957,22 @@
 <div class="sect2">
 <h3 id="업그레이드-방법">업그레이드 방법</h3>
 <div class="paragraph">
-<p>Cloud Volumes ONTAP 업그레이드는 Cloud Manager에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.</p>
+<p>Cloud Volumes ONTAP 업그레이드는 BlueXP에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.</p>
 </div>
 <div class="paragraph">
-<p><a href="http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html" target="_blank" rel="noopener">"Cloud Manager에서 알림을 받을 때 업그레이드하는 방법에 대해 알아보십시오"</a>.</p>
+<p><a href="http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html" target="_blank" rel="noopener">"BlueXP에서 알림을 받을 때 업그레이드하는 방법에 대해 알아봅니다"</a>.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="지원되는-업그레이드-경로입니다">지원되는 업그레이드 경로입니다</h3>
 <div class="paragraph">
-<p>9.11.0 릴리스 및 9.10.1 릴리스에서 Cloud Volumes ONTAP 9.11.1로 업그레이드할 수 있습니다. Cloud Manager에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지를 표시합니다.</p>
+<p>9.11.0 릴리스 및 9.10.1 릴리스에서 Cloud Volumes ONTAP 9.11.1로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="커넥터의-필수-버전입니다">커넥터의 필수 버전입니다</h3>
 <div class="paragraph">
-<p>새 Cloud Volumes ONTAP 9.11.1 시스템을 배포하고 기존 시스템을 9.11.1로 업그레이드하려면 Cloud Manager Connector가 버전 3.9.19 이상을 실행해야 합니다.</p>
+<p>새 Cloud Volumes ONTAP 9.11.1 시스템을 배포하고 기존 시스템을 9.11.1로 업그레이드하려면 BlueXP 커넥터가 버전 3.9.19 이상을 실행해야 합니다.</p>
 </div>
 <div class="admonitionblock tip">
 <table>

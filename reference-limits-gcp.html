@@ -178,7 +178,7 @@
     <li>
       
       <a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/reference-limits-gcp.html" target="_self">
-        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.0</span></span>
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.1</span></span>
       </a>
                      
     </li>
@@ -592,7 +592,7 @@
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
 </script><div class="prod-nav" id="product-nav">
-  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/ko-kr/cloud-manager-family/"><img src="/ko-kr/cloud-volumes-ontap-9111-relnotes/images/left_arrow.png" alt=""><pre>모든 Cloud Manager 설명서</pre></a>
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/ko-kr/cloud-manager-family/"><img src="/ko-kr/cloud-volumes-ontap-9111-relnotes/images/left_arrow.png" alt=""><pre>모든 BlueXP 설명서</pre></a>
 </div><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li 
       data-pdf-exists="true" 
@@ -768,7 +768,7 @@
 
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/ko-kr/cloud-manager-family/">Cloud Manager</a>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-family/">BlueXP</a>
         </li>
         
 
@@ -804,7 +804,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-09-16 20:35:34 +0000">09/16/2022</time>
+    <time datetime="2022-12-09 16:28:31 +0000">12/09/2022</time>
     
   
 
@@ -828,7 +828,7 @@
 <p>Cloud Volumes ONTAP 시스템의 최대 시스템 용량은 라이센스에 따라 결정됩니다. 최대 시스템 용량에는 디스크 기반 스토리지와 데이터 계층화에 사용되는 오브젝트 스토리지가 포함됩니다.</p>
 </div>
 <div class="paragraph">
-<p>NetApp은 시스템 용량 제한을 초과하지 않습니다. 라이센스가 부여된 용량 제한에 도달하면 Cloud Manager에서 작업 필요 메시지를 표시하고 더 이상 디스크를 추가할 수 없습니다.</p>
+<p>NetApp은 시스템 용량 제한을 초과하지 않습니다. 라이센스가 부여된 용량 제한에 도달하면 BlueXP에서 필요한 작업 메시지를 표시하고 더 이상 디스크를 추가할 수 없습니다.</p>
 </div>
 <div class="paragraph">
 <p>일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 용량 제한에 도달할 수 있습니다 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"비활성 데이터를 오브젝트 스토리지로 계층화"</a>. 자세한 내용은 아래의 디스크 제한을 참조하십시오.</p>
@@ -872,10 +872,12 @@
 </tbody>
 </table>
 <div class="paragraph">
+<div class="title">HA 쌍의 경우, 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</div>
 <p>용량 제한은 전체 HA 쌍에 대한 것입니다. 노드 단위로 표시되지 않습니다. 예를 들어, Premium 라이센스를 사용하는 경우 두 노드 간에 최대 368TB의 용량을 가질 수 있습니다.</p>
 </div>
 <div class="paragraph">
-<p>아니요, 그렇지 않습니다. HA 쌍의 데이터는 노드 간에 동기식으로 미러링되므로 Google Cloud에서 장애가 발생할 경우 데이터를 사용할 수 있습니다. 예를 들어, 노드 A에서 8TB 디스크를 구매하는 경우 Cloud Manager에서는 미러링된 데이터에 사용되는 노드 B에도 8TB 디스크를 할당합니다. 16TB의 용량을 프로비저닝했지만 라이센스 제한에 대해 8TB만 계산합니다.</p>
+<div class="title">HA 쌍의 경우, 미러링된 데이터가 라이센스 용량 제한에 대해 계산됩니까?</div>
+<p>아니요, 그렇지 않습니다. HA 쌍의 데이터는 노드 간에 동기식으로 미러링되므로 Google Cloud에서 장애가 발생할 경우 데이터를 사용할 수 있습니다. 예를 들어 노드 A에서 8TB 디스크를 구입한 경우 BlueXP는 미러링된 데이터에 사용되는 노드 B에도 8TB 디스크를 할당합니다. 16TB의 용량을 프로비저닝했지만 라이센스 제한에 대해 8TB만 계산합니다.</p>
 </div>
 </div>
 </div>

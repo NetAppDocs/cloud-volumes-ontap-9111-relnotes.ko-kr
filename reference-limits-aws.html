@@ -178,7 +178,7 @@
     <li>
       
       <a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/reference-limits-aws.html" target="_self">
-        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.0</span></span>
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.1</span></span>
       </a>
                      
     </li>
@@ -592,7 +592,7 @@
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
 </script><div class="prod-nav" id="product-nav">
-  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/ko-kr/cloud-manager-family/"><img src="/ko-kr/cloud-volumes-ontap-9111-relnotes/images/left_arrow.png" alt=""><pre>모든 Cloud Manager 설명서</pre></a>
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/ko-kr/cloud-manager-family/"><img src="/ko-kr/cloud-volumes-ontap-9111-relnotes/images/left_arrow.png" alt=""><pre>모든 BlueXP 설명서</pre></a>
 </div><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li 
       data-pdf-exists="true" 
@@ -768,7 +768,7 @@
 
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/ko-kr/cloud-manager-family/">Cloud Manager</a>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-family/">BlueXP</a>
         </li>
         
 
@@ -804,7 +804,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-09-16 20:35:34 +0000">09/16/2022</time>
+    <time datetime="2022-12-09 16:28:31 +0000">12/09/2022</time>
     
   
 
@@ -828,7 +828,7 @@
 <p>Cloud Volumes ONTAP 시스템의 최대 시스템 용량은 라이센스에 따라 결정됩니다. 최대 시스템 용량에는 디스크 기반 스토리지와 데이터 계층화에 사용되는 오브젝트 스토리지가 포함됩니다.</p>
 </div>
 <div class="paragraph">
-<p>NetApp은 시스템 용량 제한을 초과하지 않습니다. 라이센스가 부여된 용량 제한에 도달하면 Cloud Manager에서 작업 필요 메시지를 표시하고 더 이상 디스크를 추가할 수 없습니다.</p>
+<p>NetApp은 시스템 용량 제한을 초과하지 않습니다. 라이센스가 부여된 용량 제한에 도달하면 BlueXP에서 필요한 작업 메시지를 표시하고 더 이상 디스크를 추가할 수 없습니다.</p>
 </div>
 <div class="paragraph">
 <p>일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"비활성 데이터를 오브젝트 스토리지로 계층화"</a>. 자세한 내용은 아래의 용량 및 디스크 제한을 참조하십시오.</p>
@@ -872,10 +872,12 @@
 </tbody>
 </table>
 <div class="paragraph">
+<div class="title">HA의 경우 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</div>
 <p>용량 제한은 전체 HA 쌍에 대한 것입니다. 노드 단위로 표시되지 않습니다. 예를 들어, Premium 라이센스를 사용하는 경우 두 노드 간에 최대 368TiB의 용량을 가질 수 있습니다.</p>
 </div>
 <div class="paragraph">
-<p>아니요, 그렇지 않습니다. AWS HA 쌍의 데이터는 노드 간에 동기식으로 미러링되므로 장애 발생 시 데이터를 사용할 수 있습니다. 예를 들어, 노드 A에서 8TiB 디스크를 구매하는 경우 Cloud Manager는 미러링된 데이터에 사용되는 노드 B에도 8TiB 디스크를 할당합니다. 16TiB의 용량을 프로비저닝한 경우 라이센스 제한에서 8TiB만 가능합니다.</p>
+<div class="title">AWS의 HA 시스템에서 미러링된 데이터는 용량 제한에 따라 계산됩니까?</div>
+<p>아니요, 그렇지 않습니다. AWS HA 쌍의 데이터는 노드 간에 동기식으로 미러링되므로 장애 발생 시 데이터를 사용할 수 있습니다. 예를 들어 노드 A에서 8TiB 디스크를 구입한 경우 BlueXP에서는 미러링된 데이터에 사용되는 노드 B에 8TiB 디스크도 할당합니다. 16TiB의 용량을 프로비저닝한 경우 라이센스 제한에서 8TiB만 가능합니다.</p>
 </div>
 </div>
 </div>
@@ -1075,13 +1077,7 @@
 <li>
 <p>노드 기반 라이센스를 사용하는 경우 Cloud Volumes ONTAP BYOL 시스템에 여러 노드 기반 라이센스를 구매하여 368TiB 이상의 용량을 할당할 수 있습니다.</p>
 <div class="paragraph">
-<p>단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"비활성 데이터를 오브젝트 스토리지로 계층화"</a>. <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html" target="_blank" rel="noopener">"Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오"</a>.</p>
-</div>
-</li>
-<li>
-<p>이 릴리즈에서는 C4, M4 및 R4 인스턴스 유형이 새 Cloud Volumes ONTAP 시스템에서 지원되지 않습니다.</p>
-<div class="paragraph">
-<p>그러나 이러한 인스턴스 유형 중 하나에서 실행할 때 시스템을 이 릴리즈로 업그레이드할 수 있으므로 이러한 인스턴스 유형에 대한 디스크 제한은 계속 표시됩니다.</p>
+<p>단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"비활성 데이터를 오브젝트 스토리지로 계층화"</a>. <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html" target="_blank" rel="noopener">"Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오"</a></p>
 </div>
 </li>
 </ul>
@@ -1114,12 +1110,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">m5dn.24xlarge</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">19<sup>2</sup></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">304TiB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C4, M4 및 R4 인스턴스</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">34</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
 </tr>
 </tbody>
@@ -1178,14 +1168,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">304TiB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">368TiB x 각 라이센스</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C4, M4 및 R4 인스턴스</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">34</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">544TiB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB x 각 라이센스</p></td>
-</tr>
 </tbody>
 </table>
 <div class="olist arabic">
@@ -1227,12 +1209,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">m5dn.24xlarge</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">16<sup>2</sup></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">256TiB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C4, M4 및 R4 인스턴스</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">31</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
 </tr>
 </tbody>
@@ -1291,14 +1267,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">256TiB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">368TiB x 각 라이센스</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C4, M4 및 R4 인스턴스</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">31</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4,96TiB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB x 각 라이센스</p></td>
-</tr>
 </tbody>
 </table>
 <div class="olist arabic">
@@ -1326,43 +1294,30 @@
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 26%;">
-<col style="width: 26%;">
-<col style="width: 48%;">
+<col style="width: 40%;">
+<col style="width: 60%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">사용권 유형</th>
-<th class="tableblock halign-left valign-top">인스턴스 패밀리</th>
 <th class="tableblock halign-left valign-top">스토리지 VM 제한</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">* Freemium *</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>스토리지 VM 총 24개 <sup>1,2</sup></p>
-</li>
-</ul>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">* 용량 기반 PAYGO 또는 BYOL *<sup>3</sup></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>스토리지 VM 총 24개 <sup>1,2</sup></p>
-</li>
-</ul>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">* 노드 기반 PAYGO *</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C4, M4 및 R4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 노드 기반 PAYGO *</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
@@ -1375,34 +1330,7 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>1 데이터 제공용 스토리지 VM</p>
-</li>
-<li>
-<p>재해 복구용 스토리지 VM 1개</p>
-</li>
-</ul>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">* 노드 기반 BYOL * <sup>4</sup></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C4, M4 및 R4</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>1 데이터 제공용 스토리지 VM</p>
-</li>
-<li>
-<p>재해 복구용 스토리지 VM 1개</p>
-</li>
-</ul>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 노드 기반 BYOL * <sup>4</sup></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
@@ -1660,7 +1588,7 @@
 <p>이 숫자는 Cloud Volumes ONTAP를 구축하고 설정한 후 포트 e0a에서 사용 가능한 _remaining_private IP 주소 수를 나타냅니다. 예를 들어, *.2xLarge 시스템은 네트워크 인터페이스당 최대 15개의 IP 주소를 지원합니다. HA 쌍이 단일 AZ에 배포되면 5개의 전용 IP 주소가 e0a 포트에 할당됩니다. 따라서 *.2xLarge 인스턴스 유형을 사용하는 HA 쌍에는 추가 스토리지 VM에 사용할 수 있는 10개의 전용 IP 주소가 남아 있습니다.</p>
 </li>
 <li>
-<p>이 열에 나열된 번호에는 Cloud Manager가 기본적으로 생성하는 초기 스토리지 VM이 포함됩니다. 예를 들어, 이 열에 24가 표시되면 총 24개의 스토리지 VM을 추가로 23개 생성할 수 있음을 의미합니다.</p>
+<p>이 열에 나열된 번호에는 기본적으로 BlueXP에서 생성되는 초기 스토리지 VM이 포함됩니다. 예를 들어, 이 열에 24가 표시되면 총 24개의 스토리지 VM을 추가로 23개 생성할 수 있음을 의미합니다.</p>
 </li>
 <li>
 <p>스토리지 VM의 관리 LIF는 선택 사항입니다. 관리 LIF는 SnapCenter과 같은 관리 툴에 대한 연결을 제공합니다.</p>
