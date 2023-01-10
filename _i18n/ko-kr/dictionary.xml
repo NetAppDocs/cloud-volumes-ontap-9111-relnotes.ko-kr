@@ -697,4 +697,8 @@
   <block id="8e36f0f32d75ebd3c7851e726c538544" category="paragraph"><block ref="8e36f0f32d75ebd3c7851e726c538544" category="inline-link-rx"></block></block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP 블로그</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">모든 BlueXP 설명서</block>
+  <block id="90d21e45df2b69a8345b8381643767db" category="section-title">9.11.1 P4(2022년 12월 18일)</block>
+  <block id="c4426846e80c44f78da5d2553c87de70" category="paragraph">버전 3.9.24 이상을 실행하는 커넥터가 있는 경우 모든 클라우드 공급자를 위해 Cloud Volumes ONTAP에 9.11.1 P4 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link">P4 패치에서 해결된 버그 목록을 봅니다</block>
+  <block id="fdd4c7c7c56a9b411ca6cf05fb69ae8a" category="paragraph"><block ref="f533ed73bde5a6438c74b91c6480dbdb" category="inline-link-rx"></block> (NetApp Support 사이트 로그인 필요).</block>
 </blocks>
