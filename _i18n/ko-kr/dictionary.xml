@@ -611,9 +611,6 @@
   <block id="75026846c1403e202a52bdb027762fbb" category="section-title">알아 보십시오</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.</block>
   <block id="00795e3f043d0bab791590ffc0257204" category="list-text">HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.</block>
-  <block id="0810d353d59682cc576139c85dde16ca" category="section-title">C4, M4 및 R4 인스턴스 유형</block>
-  <block id="a1e5d1768da3a3100837f2ea13ebd32f" category="paragraph">9.8 릴리스, C4, M4 및 R4 인스턴스 유형부터 새로운 Cloud Volumes ONTAP 시스템에서는 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 Cloud Volumes ONTAP 시스템이 있는 경우에도 이 릴리즈로 업그레이드할 수 있습니다.</block>
-  <block id="f84be4481dc8e8613c8c66fe2b277872" category="paragraph">C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경하는 것이 좋습니다.</block>
   <block id="7bb35241d1246d5dc87cb9e61c1efc05" category="summary">이러한 알려진 제한은 Microsoft Azure의 Cloud Volumes ONTAP에만 적용됩니다.</block>
   <block id="2d9da48a9b4a4fd6966adc9c52393b79" category="doc">Azure의 알려진 제한 사항</block>
   <block id="4e9780ecc95f5dbfb27e64e3ded5cd85" category="paragraph">Microsoft Azure의 Cloud Volumes ONTAP에는 다음과 같은 알려진 제한 사항이 있습니다. 또한 반드시 검토하십시오 <block ref="edcf15b4d9d7d1e018ccca7ce112dd3e" category="inline-link-macro-rx"></block>.</block>
@@ -701,4 +698,12 @@
   <block id="fd164e9cb2bc1ac5405cabfe451663f7" category="cell">PiB 2개(여러 개의 라이센스 필요)</block>
   <block id="2dbd9a217bce4c7ba4ef467f57d6875c" category="paragraph">Cloud Volumes ONTAP BYOL 단일 노드 또는 HA 쌍 시스템에 대해 노드 기반 라이센스를 여러 개 구매하여 최대 테스트 및 지원 시스템 용량 제한인 2개의 PiB까지 368TiB의 용량을 할당할 수 있습니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>. Cloud Volumes ONTAP는 최대 테스트 및 지원되는 시스템 용량인 2 PiB를 지원하지만 2 PiB 제한을 초과하면 지원되지 않는 시스템 구성이 발생합니다.</block>
   <block id="de9d6749570efc87e63811b5947fc250" category="paragraph">AWS Secret Cloud 및 Top Secret Cloud 지역에서는 Cloud Volumes ONTAP 9.12.1부터 다수의 노드 기반 라이센스 구매를 지원합니다.</block>
+  <block id="b74a118169165fd9778df58b68c1bf8b" category="section-title">C4, M4 및 R4 EC2 인스턴스 유형으로 AWS에서 업그레이드</block>
+  <block id="fbf9b099d9ec8deac1671938fd60e8f8" category="paragraph">AWS에서는 새로운 Cloud Volumes ONTAP 구축에서 C4, M4 및 R4 EC2 인스턴스 유형이 더 이상 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 시스템이 있는 경우 C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경해야 합니다. 인스턴스 유형을 변경할 수 없는 경우 업그레이드하기 전에 향상된 네트워킹을 활성화해야 합니다.</block>
+  <block id="e1ec06a3bd4a559443a88f1cb6736c26" category="inline-link-macro">AWS에서 C4, M4 및 R4 EC2 인스턴스 유형으로 업그레이드하는 방법을 알아보십시오</block>
+  <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경하는 방법에 대해 알아보십시오</block>
+  <block id="f295c0f45a8e22a4e4db9141680cce76" category="paragraph"><block ref="0fa12a627192b6cd097b12cd8088afe0" category="inline-link-macro-rx"></block>.
+<block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>.</block>
+  <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">NetApp 지원</block>
+  <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph">을 참조하십시오 <block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block> 이러한 인스턴스 유형의 가용성 및 지원에 대한 자세한 내용을 보려면 를 참조하십시오.</block>
 </blocks>
