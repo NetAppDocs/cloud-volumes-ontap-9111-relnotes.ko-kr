@@ -640,8 +640,6 @@
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 커뮤니티</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
-  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
-  <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">ONTAP 클라우드</block>
   <block id="406542fd6b2bb7b1e564e4a6d627bddb" category="paragraph">NetApp은 시스템 용량 제한을 초과하지 않습니다. 라이센스가 부여된 용량 제한에 도달하면 BlueXP에서 필요한 작업 메시지를 표시하고 더 이상 디스크를 추가할 수 없습니다.</block>
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">HA 쌍의 경우, 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">HA 쌍의 경우, 미러링된 데이터가 라이센스 용량 제한에 대해 계산됩니까?</block>
@@ -677,7 +675,6 @@
   <block id="846a4ecea919427b6111365c125ada6f" category="list-text">이 열에 나열된 번호에는 기본적으로 BlueXP에서 생성되는 초기 스토리지 VM이 포함됩니다. 예를 들어, 이 열에 24가 표시되면 총 24개의 스토리지 VM을 추가로 23개 생성할 수 있음을 의미합니다.</block>
   <block id="8e36f0f32d75ebd3c7851e726c538544" category="paragraph"><block ref="8e36f0f32d75ebd3c7851e726c538544" category="inline-link-rx"></block></block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP 블로그</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">모든 BlueXP 설명서</block>
   <block id="90d21e45df2b69a8345b8381643767db" category="section-title">9.11.1 P4(2022년 12월 18일)</block>
   <block id="c4426846e80c44f78da5d2553c87de70" category="paragraph">버전 3.9.24 이상을 실행하는 커넥터가 있는 경우 모든 클라우드 공급자를 위해 Cloud Volumes ONTAP에 9.11.1 P4 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
   <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link">P4 패치에서 해결된 버그 목록을 봅니다</block>
@@ -706,4 +703,8 @@
 <block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>.</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">NetApp 지원</block>
   <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph">을 참조하십시오 <block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block> 이러한 인스턴스 유형의 가용성 및 지원에 대한 자세한 내용을 보려면 를 참조하십시오.</block>
+  <block id="20314c780df920e061e85ca664b06b34" category="section-title">9월 11.1 P12(2023년 12월 8일)</block>
+  <block id="1c7a84870126840dd00b9ac34caafd27" category="paragraph">이제 모든 클라우드 공급자가 Cloud Volumes ONTAP에서 9.11.1 P12 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="8a1258bf37cf0340b92dd9f9ca39acfa" category="inline-link-macro">P12 패치에서 수정된 버그 목록을 봅니다</block>
+  <block id="77c997cb28636ecd655e99756fdaa0ba" category="paragraph"><block ref="0b217e42c1535e947bb6ff7ef24ffc50" category="inline-link-macro-rx"></block> (NetApp Support 사이트 로그인 필요).</block>
 </blocks>
