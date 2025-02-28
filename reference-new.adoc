@@ -90,7 +90,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploy-aws-
 
 Cloud Volumes ONTAP는 현재 AWS 자카르타 지역(AP-동남아시아-3)에서 지원됩니다.
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
 
 
 
@@ -98,7 +98,7 @@ https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 �
 
 Cloud Volumes ONTAP는 현재 Azure 브라질 남동부 지역에서 지원됩니다.
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
 
 
 
